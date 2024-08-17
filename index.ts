@@ -3,3 +3,9 @@ const App = (x: number , y: number) => {
 }
 
 App(3 , 5)
+
+const arr = [1,2,3,4,5]
+
+arr.map((item) => {
+  console.log(item * 2)
+})
