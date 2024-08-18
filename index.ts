@@ -13,3 +13,22 @@ arr.map((item) => {
 arr.filter((item) => item < 3)
 
 console.log(arr)
+
+interface User {
+  name: string;
+  age: number;
+}
+
+class Seko implements User {
+  constructor(
+    public name: string,
+    public readonly age: number,
+  ) {}
+}
+
+const person = new Seko(
+  "seko",
+  13
+)
+
+console.log(person.name)
